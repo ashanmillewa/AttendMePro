@@ -1,0 +1,20 @@
+.footer{
+    color: white;
+    width: 100vw;
+    height: 4rem;
+    background: rgb(40, 40, 40);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.footerlink{
+    color: yellow;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 735px; 
+  }
