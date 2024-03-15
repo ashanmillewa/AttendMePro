@@ -5,7 +5,7 @@ import { HiOutlineLogout } from "react-icons/hi";
 import Home from '../../pages/Home';
 import UserRegistration from '../../pages/UserRegistration/userRegistration';
 import DailyAttendence from '../../pages/dailyAttendence';
-import Page3 from '../../pages/Page3';
+import Login from '../../pages/Login/login';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
 
@@ -21,10 +21,10 @@ const Navbar = () => {
           <Link to="/" className='desktopMenuItemList'>Home</Link>
           <Link to="/userRegistration" className='desktopMenuItemList'>Registration</Link>
           <Link to="/dailyAttendence" className='desktopMenuItemList'>Daily Attendence</Link>
-          <Link to="/page3" className='desktopMenuItemList'>Page3</Link>
+          <Link to="/login" className='desktopMenuItemList'>Login</Link>
         </div>
 
-        <button className='desktopMenuBtn' onClick={() => {
+        <button className='desktopMenuBtn' onClick={(logOut) => {
           document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
         }}>
           <HiOutlineLogout className='desktopMenuIcon' /> Log Out
@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to="/" className='desktopMenuItemList'>Home</Link>
           <Link to="/userRegistration" className='desktopMenuItemList'>Registration</Link>
           <Link to="/dailyAttendence" className='desktopMenuItemList'>Daily Attendence</Link>
-          <Link to="/page3" className='desktopMenuItemList'>Page3</Link>
+          <Link to="/login" className='desktopMenuItemList'>Login</Link>
         </div>
       </nav>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
         <Route path="/" element={<Home />} />
         <Route path="/userRegistration" element={<UserRegistration />} />
         <Route path="/dailyAttendence" element={<DailyAttendence/>} />
-        <Route path="/page3" element={<Page3 />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );

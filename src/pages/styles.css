@@ -1,0 +1,9 @@
+.page-container {
+    width: 800px;
+    height: 600px; 
+    margin: 0 auto; 
+    border: 1px solid red; 
+    padding: 20px;  
+    color:red;
+  }
+  

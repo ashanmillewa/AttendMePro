@@ -1,14 +1,13 @@
 .navbar{
     background: rgb(55,53,106);
     height: 5rem;
-    width: 100re;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: -32px;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top :0;
+    position:fixed;
     z-index: 3;
 }
 
